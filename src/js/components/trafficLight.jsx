@@ -3,21 +3,24 @@ import "../../styles/index.css";
 
 
 const TrafficLight = () => {
-    return (
-        <body>
-            <div className = "lightFrame">
-                <div className = "redLight">
-                    
-                </div>
-                <div className = "yellowLight">
-                    
-                </div>
-                <div className = "greenLight">
-                    
-                </div>
-            </div>
-        </body>
-    );
+    const [color, setColor] = useState("red");
+    
+    return(
+    <div className="lightFrame">
+      <div
+        className={`redLight ${color === "red" ? "glow" : ""}`}
+        onClick={() => setColor("red")}
+      ></div>
+      <div
+        className={`yellowLight ${color === "yellow" ? "glow" : ""}`}
+        onClick={() => setColor("yellow")}
+      ></div>
+      <div
+        className={`greenLight ${color === "green" ? "glow" : ""}`}
+        onClick={() => setColor("green")}
+      ></div>
+    </div>
+  );
 };
-
-export default trafficLight;
+   
+export default TrafficLight;

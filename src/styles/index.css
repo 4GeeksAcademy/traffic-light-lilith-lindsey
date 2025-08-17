@@ -1,3 +1,21 @@
+body {
+  margin: 0;
+  display: flex;                 
+  justify-content: center; 
+  align-items: center;  
+}
+.lightFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 360px;
+  border-radius: 20px;
+  background-color: black;
+
+}
+
 .redLight {
   width: 100px;
   height: 100px;
@@ -20,4 +38,17 @@
   background-color: green;
   border-radius: 50%;
   margin-bottom: 5px;
+} 
+
+.redLight.glow {
+  background: red;
+  box-shadow: 0 0 25px 10px red;
+}
+.yellowLight.glow {
+  background: yellow;
+  box-shadow: 0 0 25px 10px yellow;
+}
+.greenLight.glow {
+  background: limegreen;
+  box-shadow: 0 0 25px 10px limegreen;
 }
