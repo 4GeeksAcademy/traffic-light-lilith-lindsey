@@ -1,11 +1,23 @@
-/* 
+.redLight {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.yellowLight {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
 
-*/
+.greenLight {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
